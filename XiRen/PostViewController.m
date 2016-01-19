@@ -16,6 +16,7 @@
 @implementation PostViewController
 @synthesize NewFrame;
 @synthesize bbsImage;
+@synthesize faceImage;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -54,8 +55,12 @@
     
     [self.view addSubview:NewFrame];
     
-
+    faceImage=[[UIButton alloc]initWithFrame:CGRectMake(bbsImage.right+10, 0, 50, 50)];
+    faceImage.backgroundColor=[UIColor orangeColor];
+    [NewFrame addSubview:faceImage];
 }
+
+
 
 #pragma mark-buttonView移动方法
 - (void)keyboardWillShow:(NSNotification *)aNotification

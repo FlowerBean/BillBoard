@@ -26,4 +26,5 @@
 @property(nonatomic,strong)UIView *NewFrame;
 //发帖添加图片
 @property(nonatomic,strong)UIButton* bbsImage;
+@property(nonatomic,strong)UIButton* faceImage;
 @end
